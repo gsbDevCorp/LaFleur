@@ -1,0 +1,266 @@
+html, body {
+	background-color: #FCFAE1;
+}
+.enluminure {
+	font-size: 1.3em;
+}
+.BDVert {
+	background-image: linear-gradient(#B5E655, #96CA2D);
+}
+.BDMarron {
+	background-image: linear-gradient(#B09F70, #89725B);
+}
+
+.BVert {
+	background-color: #96CA2D;
+}
+.BMarron {
+	background-color: #89725B;
+}
+.textCentre {
+	text-align: center;
+}
+.lienAide {
+	font-size: 0.8em;
+	color: grey;
+}
+/*--- Header ---*/
+.titre {
+	color: #FCFAE1;
+	font-weight: bold;
+	font-family: cursive;
+	text-shadow: 3px 1px 5px black;
+	position: relative;
+	top: 25px;
+	left: 50px;
+}
+.sousTitre {
+	color: #FCFAE1;
+	font-family: cursive;
+	text-shadow: 3px 1px 5px black;
+	position: relative;
+	bottom: 18px;
+	left: 120px;
+}
+
+/*--- Navigation ---*/
+.navigation {
+	height: 50px;
+	cursor: pointer;
+}
+.navigation ul {
+  	list-style: none;
+  	font-size: 1.5em;
+  	font-family: "Monaco";
+  	height: 100%;
+  	margin: 0 0 15px;
+}
+.navigation ul li {
+  	float: left;
+ 	width: 33%;
+ 	height: 100%;
+  	text-align: center;
+}
+.navigation ul li a {
+	font-family: cursive;
+	position: relative;
+	top: 15px;
+	color: #89725B;
+}
+.navigation li:hover {
+	background-color: #89725B;
+}
+.navigation li:hover a {
+	color: #FCFAE1;
+	text-decoration: none;
+	text-shadow: none;
+}
+#pageActive, #pageActive a {
+	background-color: #89725B;
+	color: #FCFAE1;
+	text-decoration: none;
+	text-shadow: none;
+}
+.tamponNavigation {
+	height: 40px;
+}
+
+/*--- Formulaire produit ---*/
+
+#rechercheProduit p, a, label {
+	font-family: cursive;
+}
+label {
+	width: 200px;
+	font-size: 1.1em;
+}
+.Guide1formProd, .Guide2formProd p {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.Guide2formProd {
+	position: relative;
+	bottom: 105px;
+	left: 300px;
+}
+/*--- Footer ---*/
+footer {
+	height: 50px;
+}
+
+.lienFooter {
+	color: #FCFAE1;
+	font-size: 1.2em;
+	text-shadow: 3px 3px 3px black;
+	position: relative;
+	top: 15px;
+	left: 830px;
+	transition: color 0.3s ease;
+}
+.lienFooter:hover {
+	color: #B5E655;
+	text-decoration: none;
+}
+#lienActif {
+	color: #B5E655;
+	text-decoration: none;
+}
+.tamponFooter {
+	height: 80px;
+}
+.panierLite {
+	position: relative;
+	bottom: 70px;
+	background-image: linear-gradient(#B5E655, #96CA2D);
+	width: 200px;
+	height: 100px;
+	border: 1px solid #89725B;
+	border-radius: 25px 25px 0px 0px;
+	text-align: center;
+	box-shadow: 1px 1px 3px #666;
+	transition: height 0.5s ease;
+}
+.panierLite:hover {
+	height: 140px;
+	position: relative;
+	bottom: 110px;
+	transition: bottom 0.5s ease;
+}
+.panier {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+/*--- Produits ---*/
+
+.imageProduit {
+	width: 120px;
+	height: 150px;
+}
+.prixProduitPopUp {
+	position: relative;
+	top: 15px;
+	left: 45px;
+}
+.iconProduit {
+	position: relative;
+	top: 3px;
+}
+
+/*--- Index ---*/
+
+.imageAccueil img {
+	border: 1px solid #89725B;
+	border-radius: 5px;
+}
+.imageAccueil {
+	margin-right: 20px;
+}
+.textAccueil {
+	font-family: cursive;
+	text-align: justify;
+}
+
+/*--- Contact ---*/
+.titreContact {
+	text-decoration: underline;
+}
+#formMail label {
+	width: 200px;
+}
+
+/*--- Client ---*/
+.divInscriptionClient {
+	border-left: 1px dashed #89725B;
+}
+.containerClient {
+	text-align: center;
+}
+.tuilesEspaceClient {
+	vertical-align: center;
+	height: 200px;
+	margin: 20px;
+	position: relative;
+	left: 80px;
+	border-radius: 25px 25px 25px;
+	box-shadow: 1px 1px 2px #666;
+}
+.tuilesEspaceClient a {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top: 80px;
+}
+.tuile1 {
+	background: linear-gradient(#606c88, #3f4c6b);
+}
+.tuile2 {
+	background: linear-gradient(#606c88, #3b679e);
+}
+.tuile3 {
+	background: linear-gradient(#a90329, #6d0019);
+}
+.containerEspaceClient {
+	
+}
+/*--- PopUp ---*/
+#fade { /*--Masque opaque noir de fond--*/
+	display: none; /*--masqué par défaut--*/
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+.popup_block{
+	display: none; /*--masqué par défaut--*/
+	background: #fff;
+	padding: 20px;
+	border: 10px solid #B09F70;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	/*--Les différentes définitions de Box Shadow en CSS3--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	/*--Coins arrondis en CSS3--*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+img.btn_close {
+	position: relative;
+	bottom: 45px;
+	left: 45px;
+}
+/*--Gérer la position fixed pour IE6--*/
+*html #fade {
+position: absolute;
+}
+*html .popup_block {
+position: absolute;
+}
